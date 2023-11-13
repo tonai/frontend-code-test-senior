@@ -1,0 +1,8 @@
+.footer {
+  background: var(--hemocyanin);
+  color: var(--purpleHaze);
+  margin: 0 calc(var(--sideMargin) * -1);
+  padding: 25px var(--sideMargin);
+  font-size: 11px;
+  line-height: 18px;
+}

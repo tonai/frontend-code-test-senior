@@ -6,6 +6,11 @@
   --purpleHaze: #a49fc8;
   --siphon: #100030;
   --sohoLights: #f050f8;
+  --sideMargin: 20px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html,
@@ -18,6 +23,11 @@ body {
 
 body {
   background: var(--siphon);
+  margin: 0 var(--sideMargin);
+}
+
+p {
+  margin: 0;
 }
 
 .home {

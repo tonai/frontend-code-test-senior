@@ -1,0 +1,28 @@
+.button {
+  background-color: var(--sohoLights);
+  margin: 0;
+  padding: 12px;
+  border: 0;
+  border-radius: 11px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 0;
+  height: 60px;
+}
+
+.button:disabled {
+  /* color: var(--ice); */
+  /* opacity: 0.5; */
+  background-color: var(--plum);
+  color: var(--purpleHaze);
+}
+
+.buttonSmall {
+  min-width: 34px;
+  height: 34px;
+  padding: 12px 6px;
+}
+
+.buttonFull {
+  width: 100%;
+}
