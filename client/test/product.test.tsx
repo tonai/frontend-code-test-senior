@@ -1,8 +1,13 @@
-import { render, fireEvent } from "@testing-library/react";
+import { render, fireEvent, waitFor } from "@testing-library/react";
 import Product from "../pages/product";
 
+jest.mock("../services/product");
+
 test("should be able to increase and decrease product quantity", async () => {
-  const { getByText, getByTitle } = render(<Product />);
+  const { getByTestId, getByText, getByTitle } = render(<Product />);
+  await waitFor(() =>
+    expect(getByTestId("title")).toHaveTextContent("Energy saving light bulb")
+  );
 
   const increaseQuantity = getByText("+");
 
@@ -19,7 +24,10 @@ test("should be able to increase and decrease product quantity", async () => {
 });
 
 test("should be able to add items to the basket", async () => {
-  const { getByText, getByTitle } = render(<Product />);
+  const { getByTestId, getByText, getByTitle } = render(<Product />);
+  await waitFor(() =>
+    expect(getByTestId("title")).toHaveTextContent("Energy saving light bulb")
+  );
 
   const increaseQuantity = getByText("+");
 

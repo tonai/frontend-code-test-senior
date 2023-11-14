@@ -10,7 +10,7 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export default function Button(props: IButtonProps) {
-  const { children, fullWidth, small = false, ...buttonProps } = props;
+  const { children, fullWidth = false, small = false, ...buttonProps } = props;
   return (
     <button
       className={classNames(css.button, {

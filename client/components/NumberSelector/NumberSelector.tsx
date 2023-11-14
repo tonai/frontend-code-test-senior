@@ -28,7 +28,9 @@ export default function NumberSelector(props: INumberSelectorProps) {
         <Button disabled={value <= minValue} onClick={handleDecrement} small>
           -
         </Button>
-        <span className={css.value}>{value}</span>
+        <span className={css.value} title="Current quantity">
+          {value}
+        </span>
         <Button disabled={value >= maxValue} onClick={handleIncrement} small>
           +
         </Button>

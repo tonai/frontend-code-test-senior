@@ -1,13 +1,24 @@
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
+import { useEffect, useState } from "react";
+
 import ProductDetail from "../components/ProductDetail/ProductDetail";
+import { getProduct } from "../services/product";
+import { IProduct } from "../types/product";
+import Layout from "../components/Layout/Layout";
 
 export default function Product() {
+  const [product, setProduct] = useState<IProduct>();
+
+  useEffect(() => {
+    getProduct("1").then(setProduct);
+  }, []);
+
+  if (!product) {
+    return null;
+  }
+
   return (
-    <>
-      <Header />
-      <ProductDetail />
-      <Footer />
-    </>
+    <Layout>
+      <ProductDetail product={product} />
+    </Layout>
   );
 }
