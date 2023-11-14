@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component matches snapshot 1`] = `
+<div>
+  <main>
+    <img
+      alt="Philips plumen"
+      class="image"
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height="407"
+      src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F2nzwxnQ%2Fbulb.png&w=828&q=75"
+      srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F2nzwxnQ%2Fbulb.png&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F2nzwxnQ%2Fbulb.png&w=828&q=75 2x"
+      style="color: transparent; object-fit: contain; background-color: rgb(242, 242, 242);"
+      width="410"
+    />
+    <h1
+      class="title"
+      data-testid="title"
+    >
+      Energy saving light bulb
+    </h1>
+    <div
+      class="subtitle"
+    >
+      25W
+       // Packet of 
+      4
+    </div>
+    <div
+      class="addToCart"
+    >
+      <div
+        class="priceRow"
+      >
+        <span
+          class="price"
+        >
+          £12.99
+        </span>
+        <div
+          class="root"
+        >
+          <div
+            class="label"
+          >
+            Qty
+          </div>
+          <div
+            class="row"
+          >
+            <button
+              class="button buttonSmall"
+              disabled=""
+              type="button"
+            >
+              -
+            </button>
+            <span
+              class="value"
+              title="Current quantity"
+            >
+              1
+            </span>
+            <button
+              class="button buttonSmall"
+              type="button"
+            >
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="button buttonFull"
+        type="button"
+      >
+        Add to cart
+      </button>
+    </div>
+    <div
+      class="description"
+    >
+      <h2
+        class="blockTitle"
+      >
+        Description
+      </h2>
+      <p>
+        Available in 7 watts, 9 watts, 11 watts Spiral Light bulb in B22, bulb switches on instantly, no wait around warm start and flicker free features make for a great all purpose bulb
+      </p>
+    </div>
+    <div
+      class="specifications"
+    >
+      <h2
+        class="blockTitle"
+        id="specifications"
+      >
+        Specifications
+      </h2>
+      <ul
+        aria-describedby="specifications"
+        class="table"
+      >
+        <li
+          class="tableRow"
+        >
+          <div
+            class="tableCell"
+          >
+            Brand
+          </div>
+          <div
+            class="tableCell"
+          >
+            Philips
+          </div>
+        </li>
+        <li
+          class="tableRow"
+        >
+          <div
+            class="tableCell"
+          >
+            Item weight (g)
+          </div>
+          <div
+            class="tableCell"
+          >
+            77
+          </div>
+        </li>
+        <li
+          class="tableRow"
+        >
+          <div
+            class="tableCell"
+          >
+            Dimensions (cm)
+          </div>
+          <div
+            class="tableCell"
+          >
+            12.6
+             x 
+            6.2
+             x 
+            6.2
+          </div>
+        </li>
+        <li
+          class="tableRow"
+        >
+          <div
+            class="tableCell"
+          >
+            Item Model number
+          </div>
+          <div
+            class="tableCell"
+          >
+            E27 ES
+          </div>
+        </li>
+        <li
+          class="tableRow"
+        >
+          <div
+            class="tableCell"
+          >
+            Colour
+          </div>
+          <div
+            class="tableCell"
+          >
+            Cool daylight
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+</div>
+`;

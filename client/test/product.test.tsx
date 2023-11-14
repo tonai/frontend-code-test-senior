@@ -45,3 +45,19 @@ test("should be able to add items to the basket", async () => {
   const basketItems = getByTitle("Basket items");
   expect(basketItems).toHaveTextContent("4");
 });
+
+test("should be able to add existing items to the basket", async () => {
+  const { getByTestId, getByText, getByTitle } = render(<Product />);
+  await waitFor(() =>
+    expect(getByTestId("title")).toHaveTextContent("Energy saving light bulb")
+  );
+
+  const addToBasketElement = getByText("Add to cart");
+  fireEvent.click(addToBasketElement);
+
+  const basketItems = getByTitle("Basket items");
+  expect(basketItems).toHaveTextContent("1");
+
+  fireEvent.click(addToBasketElement);
+  expect(basketItems).toHaveTextContent("2");
+});

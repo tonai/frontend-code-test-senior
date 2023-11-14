@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component matches snapshot 1`] = `
+<div>
+  <div
+    class="root"
+  >
+    <div
+      class="label"
+    >
+      Qty
+    </div>
+    <div
+      class="row"
+    >
+      <button
+        class="button buttonSmall"
+        type="button"
+      >
+        -
+      </button>
+      <span
+        class="value"
+        title="Current quantity"
+      >
+        42
+      </span>
+      <button
+        class="button buttonSmall"
+        type="button"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
+`;

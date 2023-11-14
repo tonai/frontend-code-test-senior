@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component matches snapshot 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <img
+      alt="Octopus Energy Logo"
+      data-nimg="1"
+      decoding="async"
+      height="27"
+      loading="lazy"
+      src="/octopus-logo.svg"
+      style="color: transparent;"
+      width="192"
+    />
+    <div
+      class="cart"
+    >
+      <img
+        alt="Basket"
+        data-nimg="1"
+        decoding="async"
+        height="27"
+        loading="lazy"
+        src="/basket.svg"
+        style="color: transparent;"
+        width="30"
+      />
+    </div>
+  </header>
+</div>
+`;

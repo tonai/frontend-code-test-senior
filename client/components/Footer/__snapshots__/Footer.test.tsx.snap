@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component matches snapshot 1`] = `
+<div>
+  <footer
+    class="footer"
+  >
+    <p>
+      Octopus Energy Ltd is a company registered in England and Wales.
+    </p>
+    <p>
+      Registered number: 09263424. Registered office: 33 Holborn, London, EC1N 2HT. Trading Office: 20-24 Broadwick Street, London, W1F 8HT
+    </p>
+  </footer>
+</div>
+`;

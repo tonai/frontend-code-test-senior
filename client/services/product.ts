@@ -2,7 +2,7 @@ import { IBaseProduct, IProduct } from "../types/product";
 import { fetchGraphql } from "./graphql";
 
 export async function getAllProducts(): Promise<IBaseProduct[]> {
-  const data = await fetchGraphql(`
+  const data = await fetchGraphql<{ allProducts: IBaseProduct[] }>(`
 {
   allProducts {
     id
@@ -12,7 +12,7 @@ export async function getAllProducts(): Promise<IBaseProduct[]> {
 }
 
 export async function getProduct(id: string): Promise<IProduct> {
-  const data = await fetchGraphql(
+  const data = await fetchGraphql<{ Product: IProduct }>(
     `
 query Product($id: ID!) {
   Product(id: $id) {
@@ -40,7 +40,10 @@ query Product($id: ID!) {
   return data.Product;
 }
 
-const formatter = Intl.NumberFormat("en", { currency: "GBP" });
+const formatter = Intl.NumberFormat("en", {
+  currency: "GBP",
+  style: "currency",
+});
 export function formatPrice(price: number): string {
   return formatter.format(price / 100);
 }
